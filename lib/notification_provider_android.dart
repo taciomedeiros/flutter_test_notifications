@@ -5,6 +5,7 @@ import 'package:flutter_test_notifications/notification_provider_impl.dart';
 
 class NotificationProviderAndroid extends NotificationProviderImpl
     implements NotificationProvider {
+  // @todo revisitar estes canais
   final AndroidNotificationDetails _androidNotificationDetails =
       AndroidNotificationDetails(
     'your channel id',

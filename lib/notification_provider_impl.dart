@@ -48,4 +48,15 @@ class NotificationProviderImpl {
       payload: payload,
     );
   }
+
+  Future<void> cancel(int id) async {
+    await flutterLocalNotificationsPlugin.cancel(id);
+  }
+
+  Future<List<int>> listPendingNotificationsIds() async {
+    List<PendingNotificationRequest> pendingNotificationRequests =
+        await flutterLocalNotificationsPlugin.pendingNotificationRequests();
+
+    return pendingNotificationRequests.map<int>((el) => el.id).toList();
+  }
 }

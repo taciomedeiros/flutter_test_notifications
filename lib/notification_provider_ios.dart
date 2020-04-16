@@ -12,19 +12,12 @@ class NotificationProviderIOS extends NotificationProviderImpl
           requestSoundPermission: false,
           requestBadgePermission: false,
           requestAlertPermission: false,
-          onDidReceiveLocalNotification: _onDidReceiveLocalNotification,
+          onDidReceiveLocalNotification: onSelectNotification,
         ),
       ),
       onSelectNotification,
     );
     return null;
-  }
-
-  _onDidReceiveLocalNotification(
-      int id, String title, String body, String payload) {
-    print(id);
-    print(title);
-    print(payload.toString());
   }
 
   Future<void> show(String title, String body, String payload) async {
