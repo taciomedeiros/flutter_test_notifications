@@ -21,6 +21,11 @@ Projeto para testar o plugin Flutter Local Notification
   - [x] conseguimos saber quando um usuário da dismiss na notificação?
     - Não temos como saber sobre este estado
   - [x] verificar comportamento do timezone no celular quanto as notificações.
+  - [x] Testar possibilidade de conseguir gerar notificações persistentes
+    - Não é possível gerar notificações persistentes com este
+  - [x] Comportamento no não perturbe
+    - A mensagem não é exibida até que o que o não perturbe seja desativado
+  - 
 
 - [ ] Testar em aparelhos IOS;
   - [ ] Verificar possibilidade de colocar ações na notificação;
@@ -33,3 +38,6 @@ Projeto para testar o plugin Flutter Local Notification
   - [ ] conseguimos saber quando um usuário da dismiss na notificação?
     - Não temos como saber sobre este estado
   - [ ] verificar comportamento do timezone no celular quanto as notificações.
+  - [x] Testar possibilidade de conseguir gerar notificações persistentes
+    - Não é possível gerar notificações persistentes com este (Buscando esta funcionalidade nas plataformas temos que ela só foi disponibilizada no IOS 11)
+  - [ ] Comportamento no não perturbe

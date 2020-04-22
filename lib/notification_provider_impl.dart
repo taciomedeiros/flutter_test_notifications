@@ -1,8 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'dart:math';
 
 class NotificationProviderImpl {
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+  final random = new Random();
 
   Future<void> initialize(
       InitializationSettings settings, Function onSelectNotification) async {
@@ -21,7 +23,7 @@ class NotificationProviderImpl {
     platformChannelSpecifics,
   ) async {
     await flutterLocalNotificationsPlugin.show(
-      0,
+      random.nextInt(100000000),
       title,
       body,
       platformChannelSpecifics,
