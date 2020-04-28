@@ -42,7 +42,7 @@ class NotificationProviderImpl {
     var scheduledNotificationDateTime = date;
 
     await flutterLocalNotificationsPlugin.schedule(
-      0,
+      random.nextInt(100000000),
       title,
       body,
       scheduledNotificationDateTime,
